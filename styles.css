@@ -3,15 +3,37 @@
    ============================================================================ */
 
 :root {
+    /* JMU Primary Colors */
     --primary-color: #450084;        /* JMU Purple */
-    --secondary-color: #ffb400;      /* JMU Gold */
-    --text-dark: #2d3748;
-    --text-light: #666;
-    --bg-light: #f8f9fa;
+    --secondary-color: #CBB677;      /* JMU Gold */
+    
+    /* JMU Secondary Colors */
+    --medium-purple: #B599CE;
+    --light-purple: #DACCE6;
+    --dark-gold: #AD9C65;
+    --light-gold: #F4EFE1;
+    --slate-gray: #333333;
+    --dark-gray: #595959;
+    --medium-gray: #B2B2B2;
+    --light-gray: #D6D6D6;
+    
+    /* JMU Web Accent Colors */
+    --dark-green: #5F791C;
+    --dark-blue: #3C738B;
+    --medium-green: #ADCC23;
+    --medium-blue: #5498B6;
+    --light-green: #DEEBA7;
+    --light-blue: #D2EBF5;
+    --jmu-red: #A4232B;
+    
+    /* Text and Background Colors */
+    --text-dark: #333333;            /* Using Slate Gray */
+    --text-light: #595959;           /* Using Dark Gray */
+    --bg-light: #F4EFE1;             /* Using Light Gold */
     --bg-white: #ffffff;
-    --border-color: #e2e8f0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --border-color: #D6D6D6;         /* Using Light Gray */
+    --shadow: 0 4px 6px rgba(69, 0, 132, 0.1);
+    --shadow-lg: 0 10px 15px rgba(69, 0, 132, 0.1);
 }
 
 * {
@@ -38,9 +60,9 @@ body {
    ============================================================================ */
 
 .banner {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #5a0099 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--medium-purple) 100%);
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
     box-shadow: var(--shadow);
     height: 10vh;
@@ -58,10 +80,11 @@ body {
 
 .banner p,
 .banner .subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
     opacity: 0.95;
     font-weight: 300;
     margin: 0;
+    color:var(--secondary-color);
 }
 
 /* ============================================================================
@@ -313,7 +336,7 @@ p {
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary-color), #5a0099);
+    background: linear-gradient(135deg, var(--primary-color), var(--medium-purple));
     color: white;
     border-radius: 50%;
     display: flex;
@@ -369,7 +392,7 @@ p {
 }
 
 .team-card-header {
-    background: linear-gradient(135deg, var(--primary-color), #5a0099);
+    background: linear-gradient(135deg, var(--primary-color), var(--medium-purple));
     color: white;
     padding: 2rem;
     display: flex;
@@ -441,7 +464,7 @@ p {
    ============================================================================ */
 
 footer {
-    background-color: var(--text-dark);
+    background-color: var(--slate-gray);
     color: white;
     padding: 2rem 0;
     text-align: center;
